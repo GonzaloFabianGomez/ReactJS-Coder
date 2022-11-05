@@ -1,12 +1,14 @@
 import './App.css'
 import NavBar from "./components/NavBar";
-import Message from './components/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 const App = () => {
   return (
     <>
       <NavBar />
-      <Message text="Hola Mundo ItemListContainer"/>
+      <ItemListContainer text="Hola Mundo ItemListContainer"/>
+      <ItemCount />
     </>
   )
 }
