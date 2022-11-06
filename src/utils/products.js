@@ -5,7 +5,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto1.jpg"
+        "pictureUrl" : "https://images.fravega.com/f1000/d7ca24bf5639a7db78c31aa9fa963be8.jpg"
     },
     {
         "id" : 2,
@@ -13,7 +13,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto1.jpg"
+        "pictureUrl" : "https://images.fravega.com/f1000/d7ca24bf5639a7db78c31aa9fa963be8.jpg"
     },    
     {
         "id" : 3,
@@ -21,7 +21,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto2.jpg"
+        "pictureUrl" : "https://images.fravega.com/f1000/74c65b6f7635e8b9f9f228d1f0501aad.jpg"
     },    
     {
         "id" : 4,
@@ -29,7 +29,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto2.jpg"
+        "pictureUrl" : "https://images.fravega.com/f1000/74c65b6f7635e8b9f9f228d1f0501aad.jpg"
     },    
     {
         "id" : 5,
@@ -37,7 +37,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto3.jpg"
+        "pictureUrl" : "https://sampietroweb.com.ar/pub/media/catalog/product/cache/b2cca0cc42770a398d2ec902acd622e0/1/l/1lavarropas-samsung-ww65.jpg"
     },    
     {
         "id" : 6,
@@ -45,7 +45,7 @@ export const products = [
         "description": "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto4.jpg",
+        "pictureUrl" : "https://nyc3.digitaloceanspaces.com/mc-ambitec/2021/10/NX60T8115SS.jpg",
     },    
     {
         "id" : 7,
@@ -53,7 +53,7 @@ export const products = [
         "description": "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto5.jpg",
+        "pictureUrl" : "https://m.media-amazon.com/images/I/61D84NtVgVL.jpg",
     },    
     {
         "id" : 8,
@@ -61,7 +61,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto6.jpg"
+        "pictureUrl" : "https://images.fravega.com/f1000/1e2c6c499970fc8242a1c6950ef561e9.jpg"
     },    
     {
         "id" : 9,
@@ -69,7 +69,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "pictureUrl" : "../img/producto7.jpg"
+        "pictureUrl" : "https://images.fravega.com/f500/2f13f7b41a99c6631de179054477344d.jpg"
     },    
     {
         "id" : 10,
@@ -77,7 +77,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "ipictureUrl" : "../img/producto8.jpg"
+        "pictureUrl" : "https://images.fravega.com/f500/a7d82f929e12f377ff810810dea5f181.jpg"
     },    
     {
         "id" : 11,
@@ -85,7 +85,7 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "ipictureUrl" : "../img/producto8.jpg"
+        "pictureUrl" : "https://images.fravega.com/f500/a7d82f929e12f377ff810810dea5f181.jpg"
     },    
     {
         "id" : 12,
@@ -93,6 +93,6 @@ export const products = [
         "description" : "description",
         "stock" : "50",
         "price" : "150000",
-        // "ipictureUrl" : "../img/producto8.jpg"
+        "pictureUrl" : "https://images.fravega.com/f500/a7d82f929e12f377ff810810dea5f181.jpg"
     }
 ]
