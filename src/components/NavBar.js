@@ -2,7 +2,7 @@ import Cart from './CartWidget';
 
 const NavBar = () => {
     return (
-        <nav className="navbar bg-info bg-gradient shadow p-2 mb-5 rounded">
+        <nav className="navbar bg-primary bg-gradient shadow p-2 mb-5 rounded">
 
             <div className="container-fluid">
 

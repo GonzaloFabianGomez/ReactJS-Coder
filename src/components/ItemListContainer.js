@@ -1,8 +1,9 @@
 import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 import { customFetch } from '../utils/customFetch';
 import { products } from '../utils/products';
-import ItemList from './ItemList';
 import { useEffect, useState } from 'react';
+
 const ItemListContainer = (props) => {
     const [datos, setDatos]= useState([])
 
@@ -14,10 +15,12 @@ const ItemListContainer = (props) => {
 
     return (
         <>
-        <div className="row">
+        <div>
             {props.text}
-            <ItemList items={datos}/>
-            <ItemCount />
+            <div  className="row">
+                <ItemList items={datos}/>
+                <ItemCount />
+            </div>
         </div>
         </>
     )
