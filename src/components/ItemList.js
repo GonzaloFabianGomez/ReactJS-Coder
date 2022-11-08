@@ -6,7 +6,10 @@ const ItemList = ({items}) => {
             {
             items.length > 0
             ? items.map(item => <Item key={item.id} title={item.title} price={item.price} pictureUrl={item.pictureUrl} stock={item.stock} />)
-            : <p>Cargando...</p>
+            : <div className="d-flex align-items-center justify-content-center">
+                <strong className='text-primary'>Loading...</strong>
+                <div className="spinner-border text-primary " role="status" aria-hidden="true"></div>
+            </div>
             }
         </>
     )
