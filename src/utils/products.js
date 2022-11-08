@@ -1,16 +1,16 @@
 export const products = [
     {
         "id" : 1,
-        "title" : "SMART TV",
-        "description" : "description",
+        "title" : "Smart TV 4K UHD Samsung 50\"",
+        "description" : "El Smart TV Samsung UN50AU7000 tiene una resolución cuatro veces superior a la de una TV Full HD (3840 x 2160 píxeles) y cuenta con Crystal Processor 4K que garantiza una expresión de colores optimizada para que puedas ver cada detalle.",
         "stock" : "50",
         "price" : "150000",
         "pictureUrl" : "https://images.fravega.com/f1000/d7ca24bf5639a7db78c31aa9fa963be8.jpg"
     },
     {
         "id" : 2,
-        "title" : "SMART TV",
-        "description" : "description",
+        "title" : "Smart TV 4K UHD Samsung 50\"",
+        "description" : "El Smart TV Samsung UN50AU7000 tiene una resolución cuatro veces superior a la de una TV Full HD (3840 x 2160 píxeles) y cuenta con Crystal Processor 4K que garantiza una expresión de colores optimizada para que puedas ver cada detalle.",
         "stock" : "50",
         "price" : "150000",
         "pictureUrl" : "https://images.fravega.com/f1000/d7ca24bf5639a7db78c31aa9fa963be8.jpg"
