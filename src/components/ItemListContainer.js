@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import { customFetch } from '../utils/customFetch';
 import { products } from '../utils/products';
@@ -25,7 +24,6 @@ const ItemListContainer = (props) => {
             {props.text}
             <div  className="row">
                 <ItemList items={datos}/>
-                <ItemCount />
             </div>
         </div>
         </>
