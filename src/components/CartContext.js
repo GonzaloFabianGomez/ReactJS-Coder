@@ -2,46 +2,28 @@ import { createContext, useState } from "react";
 
 export const CartContext = createContext();
 
-const CartContextProvider = ( props ) => {
+const CartContextProvider = ({ children }) => {
     const [cartList, setCartList] = useState([]);
 
-    const addToCart = (item, quantity) => {
-        let found = cartList.find(product => product.idItem === item.id);
-        if ( found === undefined) {
-            setCartList([
-                ...cartList,
-                {
-                    idItem: item.id,
-                    imageItem: item.pictureUrl,
-                    titleItem: item.title,
-                    priceItem: item.price,
-                    stockItem: item.stock,
-                    quantityItem: quantity
-                }
-            ])
+    const addItem = (item, quantity) => {
 
-        }  else {
-            found.quantityItem += quantity;
+        if (isInCart(item.id)) {
+            setCartList(cartList.map(product => {
+                return product.id === item.id ? { ...product, quantity: product.quantity + quantity} : product
+            }))
+        } else {
+            setCartList([ ...cartList, { ...item, quantity }])
         }
     }
 
-    const clear = () => {
-        setCartList([])
-    }
+    const clear = () => setCartList([])
+    
+    const removeItem = (id) => setCartList(cartList.filter(product => product.id !== id));
 
-    const removeItem = (id) => {
-        let result = cartList.filter(item => item.idItem !== id)
-        setCartList(result)
-    }
-
-    const calcTotalPorItem = (idItem) => {
-        let index = cartList.map(item => item.idItem).indexOf(idItem);
-        return cartList[index].priceItem * cartList[index].quantityItem;
-    }
+    const isInCart = (id) => cartList.find(product => product.id === id) ? true : false;
 
     const calcSubTotal = () => {
-        let totalPorItem = cartList.map(item => calcTotalPorItem(item.idItem));
-        return totalPorItem.reduce((previousValue, currentValue) => previousValue + currentValue);
+        return cartList.reduce((previousValue, currentValue) => previousValue + currentValue.quantity * currentValue.price, 0)
     }
 
     const calcTotal = () => {
@@ -49,13 +31,14 @@ const CartContextProvider = ( props ) => {
     }
 
     const calcItemsQuantity = () => {
-        let quantitys = cartList.map(item => item.quantityItem);
+        let quantitys = cartList.map(item => item.quantity);
         return quantitys.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
     }
 
+
     return (
-        <CartContext.Provider value={{cartList, addToCart, clear, removeItem, calcTotalPorItem, calcSubTotal, calcTotal, calcItemsQuantity}}>
-            { props.children }
+        <CartContext.Provider value={{cartList, addItem, clear, removeItem, calcSubTotal, calcTotal, calcItemsQuantity}}>
+            { children }
         </CartContext.Provider>
     );
 }

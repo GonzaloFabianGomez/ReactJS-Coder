@@ -8,12 +8,12 @@ const ItemDetail = ({ item }) => {
 
     const [itemCount, setItemCount] = useState(0);
 
-    const { addToCart } = useContext(CartContext)
+    const test = useContext(CartContext)
 
     const onAdd = (quantity) => {
         alert("Cantidad agregada " + quantity + " unidades.");
         setItemCount(quantity);
-        addToCart(item, quantity)
+        test.addItem(item, quantity)
     }
 
     return (
@@ -50,7 +50,7 @@ const ItemDetail = ({ item }) => {
                         {
                         itemCount === 0
                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/>
-                        : <Link to='/cart'><button type="button" className="btn btn-outline-primary">Ver carrito</button></Link>
+                        : <Link to='/cart'><button type="button" className="btn btn-dark">Terminar mi compra</button></Link>
                         }
                         
                     </div>
