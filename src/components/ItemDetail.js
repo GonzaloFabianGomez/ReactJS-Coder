@@ -1,20 +1,25 @@
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = ({ item }) => {
 
     const [itemCount, setItemCount] = useState(0);
 
-    const onAdd = (message) => {
-        alert("Cantidad agregada " + message + " unidades.");
-        setItemCount(message);
+    const { addToCart } = useContext(CartContext)
+
+    const onAdd = (quantity) => {
+        alert("Cantidad agregada " + quantity + " unidades.");
+        setItemCount(quantity);
+        addToCart(item, quantity)
     }
 
     return (
         <>
         {
-            item.pictureUrl
+            item && item.pictureUrl
             ?
             <div className='container-fluid'>
                 <div className="card flex-row border-0">
@@ -45,7 +50,7 @@ const ItemDetail = ({ item }) => {
                         {
                         itemCount === 0
                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/>
-                        : <Link to='/cart'><button type="button" className="btn btn-outline-primary">CheckOut</button></Link>
+                        : <Link to='/cart'><button type="button" className="btn btn-outline-primary">Ver carrito</button></Link>
                         }
                         
                     </div>

@@ -25,7 +25,7 @@ const NavBar = () => {
 
                 </ul>
 
-                <Cart />
+                <Link to='/cart'><Cart /></Link>
 
             </div>
 
