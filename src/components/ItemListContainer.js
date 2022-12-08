@@ -1,9 +1,7 @@
 import ItemList from './ItemList';
-import { customFetch } from '../utils/customFetch';
-import { products } from '../utils/products';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-// import { db } from "../utils/firebaseConfig";
+import { firestoreFetch } from "../utils/firestoreFetch";
 
 const ItemListContainer = (props) => {
     const [datos, setDatos]= useState([])
@@ -11,11 +9,8 @@ const ItemListContainer = (props) => {
 
 
     useEffect(() => {
-        customFetch(2000, products.filter(item => {
-            if (idCategory === undefined) return item;
-            return item.categoryId === parseInt(idCategory)
-        }))
-            .then(result => setDatos(result))
+        firestoreFetch(idCategory)
+        .then(result => setDatos(result))
             .catch(err => console.log(err))
     }, [idCategory])
 
