@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+
+# Electro Shop
+
+![App Screenshot](https://raw.githubusercontent.com/GonzaloFabianGomez/ReactJS-Coder/master/public/React-App-Google-Chrome-2022-12-08-11-27-48.gif)
+
+Este proyecto es un Ecommerce de productos de electrodomesticos y electronicos.
+
+---
+
+
+## Construido con 🛠️
+
+* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+* [Bootstrap](https://getbootstrap.com/)
+* [React](https://es.reactjs.org/)
+* [Firebase](https://firebase.google.com/?hl=es)
+## Autor ✒️
+
+* **Gonzalo Fabian Gomez** - *FullStack Web Developer en formación* - [GonzaloFabianGomez](https://github.com/GonzaloFabianGomez)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +91,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
